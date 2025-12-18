@@ -2,25 +2,28 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --dekora-gold: #FDB913;
+  --dekora-blue: #20438F;
+  --dekora-black: #000000;
+  --dekora-gray: #1a1a1a;
+  --dekora-light-gray: #f5f5f5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-dekora-gold: var(--dekora-gold);
+  --color-dekora-blue: var(--dekora-blue);
+  --color-dekora-black: var(--dekora-black);
+  --color-dekora-gray: var(--dekora-gray);
+  --color-dekora-light-gray: var(--dekora-light-gray);
+  --font-sans: var(--font-fira-sans-condensed);
+  --font-heading: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-fira-sans-condensed), sans-serif;
 }
