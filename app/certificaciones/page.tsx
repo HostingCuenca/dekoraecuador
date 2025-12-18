@@ -1,8 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title: "Certificaciones PDCA | DEKORA Ecuador",
+  description: "DEKORA es la única empresa en Ecuador acreditada por PDCA. Contamos con certificaciones SGS, SSPC QCS y cumplimos con los más altos estándares de seguridad industrial.",
+  keywords: ["PDCA", "certificaciones", "SGS Ecuador", "SSPC QCS", "seguridad industrial", "pintura certificada", "Ecuador"],
+  openGraph: {
+    title: "Certificaciones PDCA | DEKORA Ecuador",
+    description: "Única empresa en Ecuador acreditada por PDCA con certificaciones internacionales.",
+    url: "https://dekoraecuador.com/certificaciones",
+  },
+  alternates: {
+    canonical: "https://dekoraecuador.com/certificaciones",
+  },
+};
 
 export default function CertificacionesPage() {
   return (

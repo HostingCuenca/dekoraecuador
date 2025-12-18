@@ -11,34 +11,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}#nosotros`,
+      url: `${baseUrl}/certificaciones`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/#nosotros`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}#servicios`,
+      url: `${baseUrl}/#servicios`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}#experiencia`,
+      url: `${baseUrl}/#productos`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/#experiencia`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}#certificaciones`,
+      url: `${baseUrl}/#contacto`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
-    },
-    {
-      url: `${baseUrl}#contacto`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
     },
   ]
 }
