@@ -141,23 +141,30 @@ export default function GalleryTabs() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.4 }}
-              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500"
+              onClick={() => handleCardClick(item.id)}
+              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
             >
               <div className="relative h-80 overflow-hidden bg-gray-100">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="object-cover md:group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
+                <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent transition-opacity duration-500 ${
+                  activeCard === item.id ? 'opacity-90' : 'opacity-70 md:group-hover:opacity-90'
+                }`}></div>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+              <div className={`absolute bottom-0 left-0 right-0 p-6 text-white transition-transform duration-500 ${
+                activeCard === item.id ? 'translate-y-0' : 'translate-y-12 md:group-hover:translate-y-0'
+              }`}>
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
                 <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-2 uppercase">
                   {item.title}
                 </h3>
-                <p className="font-[family-name:var(--font-fira-sans-condensed)] text-sm text-gray-200 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <p className={`font-[family-name:var(--font-fira-sans-condensed)] text-sm text-gray-200 leading-relaxed transition-opacity duration-500 ${
+                  activeCard === item.id ? 'opacity-100' : 'opacity-0 md:group-hover:opacity-100 md:delay-100'
+                }`}>
                   {item.description}
                 </p>
               </div>
