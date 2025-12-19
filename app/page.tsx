@@ -825,43 +825,36 @@ export default function Home() {
                 {
                   company: "Constructora Álvarez Bravo",
                   name: "Ing. Mauricio Álvarez Bravo",
-                  phone: "099-944-5973",
                   projects: "Proyectos: Orrizontes, Zyra, Vitoria, Sense"
                 },
                 {
                   company: "Empresa Perpetuo Arrayanes",
                   name: "Arq. José Antonio Andrade",
-                  phone: "098-401-3844",
                   projects: ""
                 },
                 {
                   company: "Armos Constructora",
                   name: "Ing. Juan José Nájera",
-                  phone: "099-274-9395",
                   projects: "Proyectos: La Cerámica, Urb. Orizzontes"
                 },
                 {
                   company: "Arquitecto Independiente",
                   name: "Arq. Fernando Cueva",
-                  phone: "099-397-9283",
                   projects: "Proyectos: Impermeabilización y revestimientos"
                 },
                 {
                   company: "Ingercons Cia Ltda",
                   name: "Ing. Diego Cajas",
-                  phone: "099-601-8955",
                   projects: "Proyectos: Impermeabilización y revestimientos"
                 },
                 {
                   company: "RFS Constructora",
                   name: "Ing. Luis Aguilar",
-                  phone: "099-447-2647",
                   projects: "Proyectos: Denali, Fiore"
                 },
                 {
                   company: "Nestlé Ecuador S.A.",
                   name: "Ing. Juan Pablo Terán",
-                  phone: "099-377-4260",
                   projects: "Trabajos obras civil, pintura y recubrimientos"
                 }
               ].concat([
@@ -869,43 +862,36 @@ export default function Home() {
                 {
                   company: "Constructora Álvarez Bravo",
                   name: "Ing. Mauricio Álvarez Bravo",
-                  phone: "099-944-5973",
                   projects: "Proyectos: Orrizontes, Zyra, Vitoria, Sense"
                 },
                 {
                   company: "Empresa Perpetuo Arrayanes",
                   name: "Arq. José Antonio Andrade",
-                  phone: "098-401-3844",
                   projects: ""
                 },
                 {
                   company: "Armos Constructora",
                   name: "Ing. Juan José Nájera",
-                  phone: "099-274-9395",
                   projects: "Proyectos: La Cerámica, Urb. Orizzontes"
                 },
                 {
                   company: "Arquitecto Independiente",
                   name: "Arq. Fernando Cueva",
-                  phone: "099-397-9283",
                   projects: "Proyectos: Impermeabilización y revestimientos"
                 },
                 {
                   company: "Ingercons Cia Ltda",
                   name: "Ing. Diego Cajas",
-                  phone: "099-601-8955",
                   projects: "Proyectos: Impermeabilización y revestimientos"
                 },
                 {
                   company: "RFS Constructora",
                   name: "Ing. Luis Aguilar",
-                  phone: "099-447-2647",
                   projects: "Proyectos: Denali, Fiore"
                 },
                 {
                   company: "Nestlé Ecuador S.A.",
                   name: "Ing. Juan Pablo Terán",
-                  phone: "099-377-4260",
                   projects: "Trabajos obras civil, pintura y recubrimientos"
                 }
               ]).map((ref, index) => (
@@ -917,11 +903,8 @@ export default function Home() {
                   <h4 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-dekora-blue mb-4 leading-tight">
                     {ref.company}
                   </h4>
-                  <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-700 text-lg mb-3">
+                  <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-700 text-lg mb-4">
                     <strong>{ref.name}</strong>
-                  </p>
-                  <p className="font-[family-name:var(--font-fira-sans-condensed)] text-dekora-gold font-bold text-xl mb-4">
-                    {ref.phone}
                   </p>
                   {ref.projects && (
                     <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-600 text-sm leading-relaxed">
