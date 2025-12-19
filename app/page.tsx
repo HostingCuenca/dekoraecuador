@@ -7,6 +7,7 @@ import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import GalleryTabs from "./components/GalleryTabs";
 
 export default function Home() {
   const [isHovering, setIsHovering] = useState(false);
@@ -492,6 +493,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Galería de Trabajos Realizados */}
+      <section id="galeria" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          {/* Section Title */}
+          <div className="text-center mb-16">
+            <div className="inline-block">
+              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-black mb-4 uppercase tracking-tight">
+                Nuestros <span className="text-dekora-gold">Trabajos</span>
+              </h2>
+              <div className="h-1 w-32 bg-dekora-gold mx-auto"></div>
+            </div>
+            <p className="font-[family-name:var(--font-fira-sans-condensed)] text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+              Proyectos que reflejan nuestro compromiso con la excelencia y calidad
+            </p>
+          </div>
+
+          {/* Gallery Component */}
+          <GalleryTabs />
+        </div>
+      </section>
 
       {/* Nuestros Productos */}
       <section id="productos" className="py-24 bg-dekora-light-gray relative overflow-hidden">

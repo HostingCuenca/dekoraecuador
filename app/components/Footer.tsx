@@ -32,6 +32,9 @@ export default function Footer() {
                 <a href="/#servicios" className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-400 hover:text-dekora-gold transition-colors text-sm">Servicios</a>
               </li>
               <li>
+                <a href="/#galeria" className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-400 hover:text-dekora-gold transition-colors text-sm">Galería</a>
+              </li>
+              <li>
                 <a href="/#productos" className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-400 hover:text-dekora-gold transition-colors text-sm">Productos</a>
               </li>
               <li>

@@ -32,6 +32,7 @@ export default function Header() {
         <div className="hidden md:flex gap-8 items-center font-[family-name:var(--font-fira-sans-condensed)] font-semibold text-sm uppercase tracking-wide">
           <a href="/#nosotros" className="hover:text-dekora-gold transition-colors">Nosotros</a>
           <a href="/#servicios" className="hover:text-dekora-gold transition-colors">Servicios</a>
+          <a href="/#galeria" className="hover:text-dekora-gold transition-colors">Galería</a>
           <a href="/#productos" className="hover:text-dekora-gold transition-colors">Productos</a>
           <a href="/#experiencia" className="hover:text-dekora-gold transition-colors">Experiencia</a>
           <Link href="/certificaciones" className="hover:text-dekora-gold transition-colors">Certificaciones</Link>
@@ -59,10 +60,11 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96' : 'max-h-0'}`}>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-[500px]' : 'max-h-0'}`}>
         <div className="container mx-auto px-4 pb-4 flex flex-col gap-4 font-[family-name:var(--font-fira-sans-condensed)] font-semibold text-sm uppercase tracking-wide">
           <a href="/#nosotros" onClick={closeMenu} className="hover:text-dekora-gold transition-colors py-2 border-b border-gray-200">Nosotros</a>
           <a href="/#servicios" onClick={closeMenu} className="hover:text-dekora-gold transition-colors py-2 border-b border-gray-200">Servicios</a>
+          <a href="/#galeria" onClick={closeMenu} className="hover:text-dekora-gold transition-colors py-2 border-b border-gray-200">Galería</a>
           <a href="/#productos" onClick={closeMenu} className="hover:text-dekora-gold transition-colors py-2 border-b border-gray-200">Productos</a>
           <a href="/#experiencia" onClick={closeMenu} className="hover:text-dekora-gold transition-colors py-2 border-b border-gray-200">Experiencia</a>
           <Link href="/certificaciones" onClick={closeMenu} className="hover:text-dekora-gold transition-colors py-2 border-b border-gray-200">Certificaciones</Link>
