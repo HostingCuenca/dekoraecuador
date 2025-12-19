@@ -945,7 +945,7 @@ export default function Home() {
               </a>
             </div>
             <a
-              href="mailto:info@dekora.com"
+              href="mailto:info@dekoraecuador.com"
               className="inline-block bg-dekora-blue text-white font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:opacity-90 transition-all transform hover:scale-105"
             >
               ✉️ Solicitar Cotización por Email

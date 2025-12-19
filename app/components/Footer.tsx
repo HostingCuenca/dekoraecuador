@@ -61,7 +61,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@dekora.com" className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-400 hover:text-dekora-gold transition-colors text-sm">info@dekora.com</a>
+                <a href="mailto:info@dekoraecuador.com" className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-400 hover:text-dekora-gold transition-colors text-sm">info@dekoraecuador.com</a>
               </li>
             </ul>
           </div>
