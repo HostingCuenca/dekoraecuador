@@ -26,11 +26,10 @@ export const metadata: Metadata = {
   publisher: "DEKORA Cía. Ltda.",
   icons: {
     icon: [
-      { url: "/icon.png", type: "image/png" },
       { url: "/favicon.png", type: "image/png" },
     ],
     apple: [
-      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
     ],
   },
   openGraph: {
@@ -69,10 +68,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://dekoraecuador.com",
   },
-  verification: {
-    google: "google-site-verification-code", // Agregar el código de verificación de Google Search Console
-  },
-  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
