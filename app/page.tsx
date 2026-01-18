@@ -9,18 +9,21 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import GalleryTabs from "./components/GalleryTabs";
 
+// =============================================
+// MODO MANTENIMIENTO - Cambiar a false para activar el sitio
+const SITE_DISABLED = true;
+// =============================================
+
 export default function Home() {
   const [isHovering, setIsHovering] = useState(false);
   const x = useMotionValue(0);
-  const CAROUSEL_WIDTH = 2912; // 7 tarjetas * (384px + 32px gap) = 2912px
-  const SPEED = 0.8; // pixels por frame
+  const CAROUSEL_WIDTH = 2912;
+  const SPEED = 0.8;
 
   useAnimationFrame(() => {
     if (!isHovering) {
       const currentX = x.get();
       const newX = currentX - SPEED;
-
-      // Reset cuando llega al final del primer set
       if (newX <= -CAROUSEL_WIDTH) {
         x.set(0);
       } else {
@@ -28,6 +31,24 @@ export default function Home() {
       }
     }
   });
+
+  // Página de sitio desactivado
+  if (SITE_DISABLED) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-center px-4">
+          <div className="w-20 h-1 bg-amber-500 mx-auto mb-8"></div>
+          <h1 className="text-4xl md:text-6xl font-black text-white mb-4 uppercase tracking-tight">
+            Sitio Web
+          </h1>
+          <h2 className="text-3xl md:text-5xl font-black text-amber-500 mb-8 uppercase tracking-tight">
+            Temporalmente Fuera de Línea
+          </h2>
+          <div className="w-20 h-1 bg-amber-500 mx-auto"></div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-white">
