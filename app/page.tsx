@@ -10,8 +10,8 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import GalleryTabs from "./components/GalleryTabs";
 
 // =============================================
-// MODO MANTENIMIENTO - Cambiar a false para activar el sitio
-const SITE_DISABLED = true;
+// MODO MANTENIMIENTO - Cambiar a true para desactivar el sitio
+const SITE_DISABLED = false;
 // =============================================
 
 export default function Home() {
