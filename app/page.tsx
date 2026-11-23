@@ -214,7 +214,7 @@ export default function Home() {
           </div>
 
           {/* Cards Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1">
             {/* Calidad y Rapidez */}
             <div className="group relative bg-white overflow-hidden">
               <div className="relative w-full h-96 overflow-hidden">
@@ -649,7 +649,7 @@ export default function Home() {
                 <div className="flex items-center gap-4">
                   <div className="relative w-16 h-16">
                     <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1200px-Flag_of_Europe.svg.png"
+                      src="/bandera-europa.svg"
                       alt="Bandera de Europa"
                       fill
                       className="object-contain"
