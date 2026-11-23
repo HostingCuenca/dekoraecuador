@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
       aria-label="Contactar por WhatsApp"
     >
       {/* Badge "Escríbenos" */}
-      <div className="absolute -top-2 -left-24 bg-dekora-gold text-black font-[family-name:var(--font-fira-sans-condensed)] font-bold px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-sm">
+      <div className="absolute -top-2 -left-24 bg-dekora-gold text-dekora-navy font-[family-name:var(--font-fira-sans-condensed)] font-bold px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-sm">
         Escríbenos
       </div>
 

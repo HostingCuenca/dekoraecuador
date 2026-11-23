@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "DEKORA - Pinturas y Revestimientos",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DEKORA - Profesionales en Pinturas y Revestimientos",
     description: "Empresa especializada en servicios de pintura y revestimientos de alta calidad.",
-    images: ["/logo.png"],
+    images: ["/og.png"],
   },
   robots: {
     index: true,

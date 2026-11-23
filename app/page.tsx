@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import GalleryTabs from "./components/GalleryTabs";
+import WhyUs from "./components/WhyUs";
 
 // =============================================
 // MODO MANTENIMIENTO - Cambiar a true para desactivar el sitio
@@ -35,16 +36,16 @@ export default function Home() {
   // Página de sitio desactivado
   if (SITE_DISABLED) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="min-h-screen bg-dekora-navy flex items-center justify-center">
         <div className="text-center px-4">
-          <div className="w-20 h-1 bg-amber-500 mx-auto mb-8"></div>
+          <div className="w-20 h-1 bg-dekora-gold mx-auto mb-8"></div>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-4 uppercase tracking-tight">
             Sitio Web
           </h1>
-          <h2 className="text-3xl md:text-5xl font-black text-amber-500 mb-8 uppercase tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-black text-dekora-gold mb-8 uppercase tracking-tight">
             Temporalmente Fuera de Línea
           </h2>
-          <div className="w-20 h-1 bg-amber-500 mx-auto"></div>
+          <div className="w-20 h-1 bg-dekora-gold mx-auto"></div>
         </div>
       </div>
     );
@@ -67,10 +68,10 @@ export default function Home() {
             priority
           />
           {/* Dark Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-dekora-navy/60"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="font-[family-name:var(--font-poppins)] text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tight">
+          <h1 className="font-[family-name:var(--font-poppins)] text-[2rem] leading-tight sm:text-5xl sm:leading-none md:text-7xl font-black text-white mb-6 uppercase tracking-tight">
             Profesionales en<br />
             <span className="text-dekora-gold">Pinturas y Revestimientos</span>
           </h1>
@@ -79,7 +80,7 @@ export default function Home() {
           </p>
           <a
             href="#contacto"
-            className="inline-block bg-dekora-gold text-black font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-yellow-500 transition-all transform hover:scale-105"
+            className="inline-block bg-dekora-gold text-dekora-navy font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-dekora-gold-dark transition-all transform hover:scale-105"
           >
             Solicitar Cotización
           </a>
@@ -90,8 +91,8 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl font-black mb-4 uppercase">
-              Certificaciones <span className="text-dekora-gold">PDCA</span>
+            <h2 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl font-black mb-4 text-dekora-navy uppercase">
+              Certificaciones <span className="text-dekora-blue">PDCA</span>
             </h2>
             <p className="font-[family-name:var(--font-fira-sans-condensed)] text-lg text-gray-600 mb-4">
               Painting and Decorating Contractors of America
@@ -109,7 +110,7 @@ export default function Home() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-black uppercase">Member</h3>
+                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-dekora-navy uppercase">Member</h3>
                 <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-600 mt-2">
                   Miembro oficial de PDCA
                 </p>
@@ -123,7 +124,7 @@ export default function Home() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-black uppercase">Accredited</h3>
+                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-dekora-navy uppercase">Accredited</h3>
                 <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-600 mt-2">
                   Contratista acreditado PDCA
                 </p>
@@ -132,7 +133,7 @@ export default function Home() {
             <div className="text-center">
               <Link
                 href="/certificaciones"
-                className="inline-block bg-dekora-gold text-black font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-yellow-500 transition-all transform hover:scale-105"
+                className="inline-block bg-dekora-gold text-dekora-navy font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-dekora-gold-dark transition-all transform hover:scale-105"
               >
                 Ver todas nuestras certificaciones
               </Link>
@@ -141,23 +142,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ¿Por qué nos contratan? */}
+      <WhyUs />
+
       {/* Sobre Nosotros */}
       <section id="nosotros" className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 uppercase">
-            <span className="text-dekora-gold">Sobre</span> Nosotros
+          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 text-dekora-navy uppercase">
+            <span className="text-dekora-blue">Sobre</span> Nosotros
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-lg text-gray-700 mb-6 leading-relaxed">
-                <strong className="text-black">DEKORA Cía. Ltda.</strong>, somos una empresa con trayectoria que se especializa en el servicio de pintura y revestimientos de la más alta calidad, tanto arquitectónica, comercial e industrial.
+                <strong className="text-dekora-navy">DEKORA Cía. Ltda.</strong>, somos una empresa con trayectoria que se especializa en el servicio de pintura y revestimientos de la más alta calidad, tanto arquitectónica, comercial e industrial.
               </p>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-lg text-gray-700 mb-6 leading-relaxed">
                 Para nosotros ningún trabajo es grande o pequeño; nuestro objetivo principal es satisfacer las necesidades de nuestros clientes, creando lazos de confianza entre nosotros y usted que le permita embellecer su espacio a un precio inigualable.
               </p>
             </div>
             <div className="bg-dekora-light-gray p-8 rounded-sm">
-              <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold mb-6 text-dekora-gold uppercase">Nuestra Filosofía</h3>
+              <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold mb-6 text-dekora-blue uppercase">Nuestra Filosofía</h3>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-700 leading-relaxed">
                 Lo que buscamos como empresa es brindar un servicio basado en la excelencia con materiales de primerísima calidad y mano de obra profesional, que refleje la seriedad que poseemos y las ganas de trabajar para usted.
               </p>
@@ -167,12 +171,12 @@ export default function Home() {
       </section>
 
       {/* Misión y Visión */}
-      <section className="py-24 bg-gradient-to-r from-black to-dekora-gray">
+      <section className="py-24 bg-gradient-to-r from-dekora-navy to-dekora-blue-dark">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-sm border border-dekora-gold/20">
               <div className="w-16 h-16 bg-dekora-gold rounded-sm flex items-center justify-center mb-6">
-                <span className="text-3xl font-bold text-black">M</span>
+                <span className="text-3xl font-bold text-dekora-navy">M</span>
               </div>
               <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-dekora-gold mb-4 uppercase">Nuestra Misión</h3>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-300 leading-relaxed">
@@ -181,7 +185,7 @@ export default function Home() {
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-sm border border-dekora-gold/20">
               <div className="w-16 h-16 bg-dekora-gold rounded-sm flex items-center justify-center mb-6">
-                <span className="text-3xl font-bold text-black">V</span>
+                <span className="text-3xl font-bold text-dekora-navy">V</span>
               </div>
               <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-dekora-gold mb-4 uppercase">Nuestra Visión</h3>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-300 leading-relaxed">
@@ -202,8 +206,8 @@ export default function Home() {
           {/* Section Title */}
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-black mb-4 uppercase tracking-tight">
-                Nuestro <span className="text-dekora-gold">Éxito</span> Se Debe A
+              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-dekora-navy mb-4 uppercase tracking-tight">
+                Nuestro <span className="text-dekora-blue">Éxito</span> Se Debe A
               </h2>
               <div className="h-1 w-32 bg-dekora-gold mx-auto"></div>
             </div>
@@ -220,7 +224,7 @@ export default function Home() {
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-0 group-hover:translate-y-0 transition-transform duration-300">
                 <div className="w-16 h-1 bg-dekora-gold mb-4"></div>
@@ -238,7 +242,7 @@ export default function Home() {
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-0 group-hover:translate-y-0 transition-transform duration-300">
                 <div className="w-16 h-1 bg-dekora-gold mb-4"></div>
@@ -256,7 +260,7 @@ export default function Home() {
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-0 group-hover:translate-y-0 transition-transform duration-300">
                 <div className="w-16 h-1 bg-dekora-gold mb-4"></div>
@@ -274,7 +278,7 @@ export default function Home() {
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-0 group-hover:translate-y-0 transition-transform duration-300">
                 <div className="w-16 h-1 bg-dekora-gold mb-4"></div>
@@ -287,7 +291,7 @@ export default function Home() {
       </section>
 
       {/* Nuestros Clientes */}
-      <section className="py-20 bg-black relative overflow-hidden">
+      <section className="py-20 bg-dekora-navy relative overflow-hidden">
         {/* Geometric Background Elements */}
         <div className="absolute top-0 left-0 w-1/3 h-full bg-dekora-blue opacity-5"></div>
         <div className="absolute bottom-0 right-0 w-1/4 h-2/3 bg-dekora-gold opacity-5"></div>
@@ -314,7 +318,7 @@ export default function Home() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/95 via-dekora-navy/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
@@ -338,7 +342,7 @@ export default function Home() {
                   fill
                   className="object-cover transition-opacity duration-700 opacity-0 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/95 via-dekora-navy/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
@@ -356,7 +360,7 @@ export default function Home() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/95 via-dekora-navy/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
@@ -380,7 +384,7 @@ export default function Home() {
                   fill
                   className="object-cover transition-opacity duration-700 opacity-0 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/95 via-dekora-navy/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
@@ -404,7 +408,7 @@ export default function Home() {
                   fill
                   className="object-cover transition-opacity duration-700 opacity-0 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/95 via-dekora-navy/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
@@ -428,7 +432,7 @@ export default function Home() {
                   fill
                   className="object-cover transition-opacity duration-700 opacity-0 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/95 via-dekora-navy/40 to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-3"></div>
@@ -443,8 +447,8 @@ export default function Home() {
       {/* Servicios */}
       <section id="servicios" className="py-24 bg-dekora-light-gray">
         <div className="container mx-auto px-4">
-          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 uppercase">
-            Nuestros <span className="text-dekora-gold">Servicios</span>
+          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 text-dekora-navy uppercase">
+            Nuestros <span className="text-dekora-blue">Servicios</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Pintura */}
@@ -459,7 +463,7 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-6 group-hover:w-24 transition-all"></div>
-                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-4 uppercase">Pintura</h3>
+                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-4 text-dekora-navy uppercase">Pintura</h3>
                 <ul className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-700 space-y-2">
                   <li>• Pintura para interiores y exteriores</li>
                   <li>• Impermeabilizaciones</li>
@@ -479,7 +483,7 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-6 group-hover:w-24 transition-all"></div>
-                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-4 uppercase">Revestimientos</h3>
+                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-4 text-dekora-navy uppercase">Revestimientos</h3>
                 <ul className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-700 space-y-2">
                   <li>• Grafiado</li>
                   <li>• Rullato (Acrílico - Vinyl Acrílico)</li>
@@ -501,7 +505,7 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <div className="w-16 h-1 bg-dekora-gold mb-6 group-hover:w-24 transition-all"></div>
-                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-4 uppercase">Servicios Adicionales</h3>
+                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold mb-4 text-dekora-navy uppercase">Servicios Adicionales</h3>
                 <ul className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-700 space-y-2">
                   <li>• Limpieza de vidrios, ventanales, techos y canales</li>
                   <li>• Asesoría en decoración de interiores (gratuito)</li>
@@ -520,8 +524,8 @@ export default function Home() {
           {/* Section Title */}
           <div className="text-center mb-16">
             <div className="inline-block">
-              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-black mb-4 uppercase tracking-tight">
-                Nuestros <span className="text-dekora-gold">Trabajos</span>
+              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-dekora-navy mb-4 uppercase tracking-tight">
+                Nuestros <span className="text-dekora-blue">Trabajos</span>
               </h2>
               <div className="h-1 w-32 bg-dekora-gold mx-auto"></div>
             </div>
@@ -542,8 +546,8 @@ export default function Home() {
           {/* Section Title */}
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-black mb-4 uppercase tracking-tight">
-                Nuestros <span className="text-dekora-gold">Productos</span>
+              <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-6xl font-black text-dekora-navy mb-4 uppercase tracking-tight">
+                Nuestros <span className="text-dekora-blue">Productos</span>
               </h2>
               <div className="h-1 w-32 bg-dekora-gold mx-auto"></div>
             </div>
@@ -564,7 +568,7 @@ export default function Home() {
                   className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                 <div className="w-12 h-1 bg-dekora-gold mb-2"></div>
                 <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-white uppercase">Cecois</h3>
@@ -581,7 +585,7 @@ export default function Home() {
                   className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                 <div className="w-12 h-1 bg-dekora-gold mb-2"></div>
                 <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-white uppercase">Lastofill</h3>
@@ -598,7 +602,7 @@ export default function Home() {
                   className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                 <div className="w-12 h-1 bg-dekora-gold mb-2"></div>
                 <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-white uppercase">Lastois</h3>
@@ -615,7 +619,7 @@ export default function Home() {
                   className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                 <div className="w-12 h-1 bg-dekora-gold mb-2"></div>
                 <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-white uppercase">Listoplast</h3>
@@ -669,8 +673,8 @@ export default function Home() {
       {/* Experiencia */}
       <section id="experiencia" className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 uppercase">
-            Nuestra <span className="text-dekora-gold">Experiencia</span>
+          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 text-dekora-navy uppercase">
+            Nuestra <span className="text-dekora-blue">Experiencia</span>
           </h2>
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
@@ -689,7 +693,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="w-12 h-1 bg-dekora-gold mb-3"></div>
@@ -713,7 +717,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="w-12 h-1 bg-dekora-gold mb-3"></div>
@@ -737,7 +741,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="w-12 h-1 bg-dekora-gold mb-3"></div>
@@ -761,7 +765,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="w-12 h-1 bg-dekora-gold mb-3"></div>
@@ -785,7 +789,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="w-12 h-1 bg-dekora-gold mb-3"></div>
@@ -810,7 +814,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-dekora-navy/80 via-dekora-navy/40 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="w-12 h-1 bg-dekora-gold mb-3"></div>
@@ -827,8 +831,8 @@ export default function Home() {
       {/* Referencias */}
       <section className="py-24 bg-dekora-light-gray overflow-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 uppercase">
-            <span className="text-dekora-gold">Referencias</span>
+          <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 text-dekora-navy uppercase">
+            <span className="text-dekora-blue">Referencias</span>
           </h2>
 
           {/* Infinite Carousel */}
@@ -940,7 +944,7 @@ export default function Home() {
       </section>
 
       {/* Contacto */}
-      <section id="contacto" className="py-24 bg-gradient-to-br from-black via-dekora-gray to-black">
+      <section id="contacto" className="py-24 bg-gradient-to-br from-dekora-navy via-dekora-blue-dark to-dekora-navy">
         <div className="container mx-auto px-4">
           <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 uppercase text-white">
             <span className="text-dekora-gold">Contáctenos</span>
@@ -952,7 +956,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
               <a
                 href="tel:+593998012905"
-                className="inline-flex items-center gap-2 bg-white text-black font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-gray-100 transition-all transform hover:scale-105"
+                className="inline-flex items-center gap-2 bg-white text-dekora-navy font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-gray-100 transition-all transform hover:scale-105"
               >
                 <span>📞</span> Llamar: +593 99 801 2905
               </a>
@@ -960,14 +964,14 @@ export default function Home() {
                 href="https://wa.me/593992551521"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-dekora-gold text-black font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-yellow-500 transition-all transform hover:scale-105"
+                className="inline-flex items-center gap-2 bg-dekora-gold text-dekora-navy font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-dekora-gold-dark transition-all transform hover:scale-105"
               >
                 <span>💬</span> WhatsApp: +593 99 255 1521
               </a>
             </div>
             <a
               href="mailto:info@dekoraecuador.com"
-              className="inline-block bg-dekora-blue text-white font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:opacity-90 transition-all transform hover:scale-105"
+              className="inline-block bg-dekora-blue border border-white/30 text-white font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:opacity-90 transition-all transform hover:scale-105"
             >
               ✉️ Solicitar Cotización por Email
             </a>

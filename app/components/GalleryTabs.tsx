@@ -99,7 +99,7 @@ export default function GalleryTabs() {
           onClick={() => setActiveTab('todo')}
           className={`font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-3 rounded-sm uppercase tracking-wide transition-all transform hover:scale-105 ${
             activeTab === 'todo'
-              ? 'bg-dekora-gold text-black shadow-lg'
+              ? 'bg-dekora-gold text-dekora-navy shadow-lg'
               : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-dekora-gold'
           }`}
         >
@@ -109,7 +109,7 @@ export default function GalleryTabs() {
           onClick={() => setActiveTab('comercial')}
           className={`font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-3 rounded-sm uppercase tracking-wide transition-all transform hover:scale-105 ${
             activeTab === 'comercial'
-              ? 'bg-dekora-gold text-black shadow-lg'
+              ? 'bg-dekora-gold text-dekora-navy shadow-lg'
               : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-dekora-gold'
           }`}
         >
@@ -119,7 +119,7 @@ export default function GalleryTabs() {
           onClick={() => setActiveTab('industrial')}
           className={`font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-3 rounded-sm uppercase tracking-wide transition-all transform hover:scale-105 ${
             activeTab === 'industrial'
-              ? 'bg-dekora-gold text-black shadow-lg'
+              ? 'bg-dekora-gold text-dekora-navy shadow-lg'
               : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-dekora-gold'
           }`}
         >
@@ -151,7 +151,7 @@ export default function GalleryTabs() {
                   fill
                   className="object-cover md:group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent transition-opacity duration-500 ${
+                <div className={`absolute inset-0 bg-gradient-to-t from-dekora-navy/90 via-dekora-navy/50 to-transparent transition-opacity duration-500 ${
                   activeCard === item.id ? 'opacity-90' : 'opacity-70 md:group-hover:opacity-90'
                 }`}></div>
               </div>
@@ -169,7 +169,7 @@ export default function GalleryTabs() {
                 </p>
               </div>
               {/* Category Badge */}
-              <div className="absolute top-4 right-4 bg-dekora-gold text-black px-3 py-1 rounded-full text-xs font-[family-name:var(--font-fira-sans-condensed)] font-bold uppercase">
+              <div className="absolute top-4 right-4 bg-dekora-gold text-dekora-navy px-3 py-1 rounded-full text-xs font-[family-name:var(--font-fira-sans-condensed)] font-bold uppercase">
                 {item.category}
               </div>
             </motion.div>
@@ -180,7 +180,7 @@ export default function GalleryTabs() {
       {/* Stats */}
       <div className="mt-12 text-center">
         <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-600">
-          Mostrando <span className="font-bold text-dekora-gold">{filteredItems.length}</span> de{' '}
+          Mostrando <span className="font-bold text-dekora-blue">{filteredItems.length}</span> de{' '}
           <span className="font-bold">{galleryItems.length}</span> proyectos
         </p>
       </div>

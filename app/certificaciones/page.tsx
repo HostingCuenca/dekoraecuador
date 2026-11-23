@@ -26,13 +26,13 @@ export default function CertificacionesPage() {
       <WhatsAppButton />
 
       {/* Spacer for fixed header */}
-      <div className="h-20"></div>
+      <div className="h-20 lg:h-24"></div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-black via-dekora-gray to-black">
+      <section className="py-20 bg-gradient-to-br from-dekora-navy via-dekora-blue-dark to-dekora-navy">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="font-[family-name:var(--font-poppins)] text-5xl md:text-6xl font-black text-white mb-6 uppercase tracking-tight">
+            <h1 className="font-[family-name:var(--font-poppins)] text-[2rem] sm:text-5xl md:text-6xl font-black text-white mb-6 uppercase tracking-tight">
               <span className="text-dekora-gold">Certificaciones</span> y Acreditaciones
             </h1>
             <p className="font-[family-name:var(--font-fira-sans-condensed)] text-xl text-gray-300">
@@ -46,8 +46,8 @@ export default function CertificacionesPage() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center mb-16">
-            <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black mb-6 uppercase">
-              Certificaciones <span className="text-dekora-gold">PDCA</span>
+            <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black mb-6 text-dekora-navy uppercase">
+              Certificaciones <span className="text-dekora-blue">PDCA</span>
             </h2>
             <p className="font-[family-name:var(--font-fira-sans-condensed)] text-xl text-gray-600 mb-4">
               Painting and Decorating Contractors of America
@@ -67,7 +67,7 @@ export default function CertificacionesPage() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-black uppercase mb-3">Member</h3>
+              <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-dekora-navy uppercase mb-3">Member</h3>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-600 text-lg">
                 Miembro oficial de PDCA
               </p>
@@ -81,7 +81,7 @@ export default function CertificacionesPage() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-black uppercase mb-3">Accredited</h3>
+              <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-dekora-navy uppercase mb-3">Accredited</h3>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-gray-600 text-lg">
                 Contratista acreditado PDCA
               </p>
@@ -91,7 +91,7 @@ export default function CertificacionesPage() {
       </section>
 
       {/* Certificaciones Principales */}
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-dekora-navy">
         <div className="container mx-auto px-4">
           <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-center mb-16 uppercase text-white">
             Nuestras <span className="text-dekora-gold">Acreditaciones</span>
@@ -101,7 +101,7 @@ export default function CertificacionesPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-sm border border-dekora-gold/30 text-center hover:bg-white/10 transition-all">
                 <div className="w-24 h-24 bg-dekora-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-4xl font-bold text-black">✓</span>
+                  <span className="text-4xl font-bold text-dekora-navy">✓</span>
                 </div>
                 <h4 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-dekora-gold mb-3">PDCA</h4>
                 <p className="font-[family-name:var(--font-fira-sans-condensed)] text-base text-gray-300 mb-3">Acreditación #107096</p>
@@ -109,7 +109,7 @@ export default function CertificacionesPage() {
               </div>
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-sm border border-dekora-gold/30 text-center hover:bg-white/10 transition-all">
                 <div className="w-24 h-24 bg-dekora-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-4xl font-bold text-black">A</span>
+                  <span className="text-4xl font-bold text-dekora-navy">A</span>
                 </div>
                 <h4 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-dekora-gold mb-3">SGS Ecuador</h4>
                 <p className="font-[family-name:var(--font-fira-sans-condensed)] text-base text-gray-300 mb-3">Calificación "A"</p>
@@ -117,7 +117,7 @@ export default function CertificacionesPage() {
               </div>
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-sm border border-dekora-gold/30 text-center hover:bg-white/10 transition-all">
                 <div className="w-24 h-24 bg-dekora-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl font-bold text-black">QCS</span>
+                  <span className="text-3xl font-bold text-dekora-navy">QCS</span>
                 </div>
                 <h4 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-dekora-gold mb-3">SSPC QCS</h4>
                 <p className="font-[family-name:var(--font-fira-sans-condensed)] text-base text-gray-300 mb-3">Quality Control Supervisor</p>
@@ -128,8 +128,8 @@ export default function CertificacionesPage() {
 
           {/* Seguridad Industrial */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm p-10 rounded-sm border border-dekora-blue/30">
-              <h3 className="font-[family-name:var(--font-poppins)] text-3xl font-bold text-dekora-blue mb-6 text-center uppercase">Seguridad Industrial</h3>
+            <div className="bg-white/5 backdrop-blur-sm p-10 rounded-sm border border-white/20">
+              <h3 className="font-[family-name:var(--font-poppins)] text-3xl font-bold text-white mb-6 text-center uppercase">Seguridad Industrial</h3>
               <p className="font-[family-name:var(--font-fira-sans-condensed)] text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto leading-relaxed">
                 Mantenemos los estándares más altos en seguridad industrial. Manual Safety Employment Guide de PDCA.
                 Cada empleado cuenta con Seguro de Vida Privado contra accidentes.
@@ -195,8 +195,8 @@ export default function CertificacionesPage() {
       <section className="py-24 bg-gradient-to-br from-dekora-light-gray to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-black mb-6 uppercase">
-              ¿Listo para trabajar con <span className="text-dekora-gold">profesionales certificados</span>?
+            <h2 className="font-[family-name:var(--font-poppins)] text-4xl md:text-5xl font-black text-dekora-navy mb-6 uppercase">
+              ¿Listo para trabajar con <span className="text-dekora-blue">profesionales certificados</span>?
             </h2>
             <p className="font-[family-name:var(--font-fira-sans-condensed)] text-xl text-gray-600 mb-8">
               Solicite una cotización y descubra la diferencia de trabajar con la única empresa acreditada PDCA en Ecuador
@@ -206,7 +206,7 @@ export default function CertificacionesPage() {
                 href="https://wa.me/593992551521"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-dekora-gold text-black font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-yellow-500 transition-all transform hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 bg-dekora-gold text-dekora-navy font-[family-name:var(--font-fira-sans-condensed)] font-bold px-8 py-4 rounded-sm uppercase tracking-wide hover:bg-dekora-gold-dark transition-all transform hover:scale-105"
               >
                 <span>💬</span> Contactar por WhatsApp
               </a>
